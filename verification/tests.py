@@ -7,30 +7,65 @@ Each test is dict with
     "explanation" -- not necessary key, it's using for additional info in animation.
 """
 
-
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": "Hello World hello",
+            "answer": True,
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": "He is 123 man",
+            "answer": False,
+        },
+        {
+            "input": "1 2 3 4",
+            "answer": False,
+        },
+        {
+            "input": "bla bla bla bla",
+            "answer": True,
+        },
+        {
+            "input": "Hi",
+            "answer": False,
+        },
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": "one two 3 four five 6 seven eight 9 ten eleven 12",
+            "answer": False,
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": "one two 3 four 5 six 7 eight 9 ten eleven 12",
+            "answer": False,
+        },
+        {
+            "input": "one two 3 four five six 7 eight 9 ten eleven 12",
+            "answer": True,
+        },
+        {
+            "input": "1231 321 3123 12312 3231 321 312 3123 1231",
+            "answer": False,
+        },
+        {
+            "input": "sda das das dsa adfs dfasd fas",
+            "answer": True,
+        },
+        {
+            "input": "0 qwerty iddqd asdfg ",
+            "answer": True,
+        },
+        {
+            "input": "0 qwerty a asdfg 2",
+            "answer": True,
+        },
+        {
+            "input": "0 qwerty 99999999999 asdfg 2",
+            "answer": False,
+        },
+        {
+            "input": "qwe fds 32 khh wwewe 123 uiu 8794",
+            "answer": False,
+        },
     ]
 }
