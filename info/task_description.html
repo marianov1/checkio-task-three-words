@@ -1,39 +1,53 @@
 <p>
-    <i>( Describe task in general )</i>
+    Let's learn the Robots distinguish words and numbers.
 </p>
 
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
+    You are given a string with words and numbers separated by whitespaces. The words contains only letters.
+    You should check is the string contains three words in succession.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Hints: </strong> You can easily solve this task with several useful functions:
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.isalpha">str.isalpha</a> and
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.isalpha">str.isalpha</a> and
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+    {% endif %}
+</p>
+
+
+<p>
+    <strong>Precondition:</strong> Input contains only words and numbers. Mixes (letters and digits) are not allowed.
+</p>
+<p>
+    <strong>Input: </strong> A string.
+</p>
+
+<p>
+    <strong>Output: </strong> True or False, a boolean.
 </p>
 
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+checkio("Hello World hello") == True
+checkio("He is 123 man") == False
+checkio("1 2 3 4") == False
+checkio("bla bla bla bla") == True
+checkio("Hi") == False
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    How to work with strings and useful functions.
 </p>
