@@ -92,42 +92,42 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
 
         });
 
-        //This is for Tryit (but not necessary)
-//        var $tryit;
-//        ext.set_console_process_ret(function (this_e, ret) {
-//            $tryit.find(".checkio-result").html("Result<br>" + ret);
-//        });
-//
-//        ext.set_generate_animation_panel(function (this_e) {
-//            $tryit = $(this_e.setHtmlTryIt(ext.get_template('tryit'))).find('.tryit-content');
-//            $tryit.find('.bn-check').click(function (e) {
-//                e.preventDefault();
-//                this_e.sendToConsoleCheckiO("something");
-//                e.stopPropagation();
-//                return false;
-//            });
-//        });
+        var $tryit;
 
-        var colorOrange4 = "#F0801A";
-        var colorOrange3 = "#FA8F00";
-        var colorOrange2 = "#FAA600";
-        var colorOrange1 = "#FABA00";
+        ext.set_console_process_ret(function (this_e, ret) {
+            $tryit.find(".checkio-result").html("Your Result<br>" + ret);
+        });
 
-        var colorBlue4 = "#294270";
-        var colorBlue3 = "#006CA9";
-        var colorBlue2 = "#65A1CF";
-        var colorBlue1 = "#8FC7ED";
+        ext.set_generate_animation_panel(function (this_e) {
+            $tryit = $(this_e.setHtmlTryIt(ext.get_template('tryit'))).find('.tryit-content');
+            $tryit.find('.bn-check').click(function (e) {
+                e.preventDefault();
+                var $input = $tryit.find(".text-input");
+                var data = $input.val();
+                this_e.sendToConsoleCheckiO(data);
+                e.stopPropagation();
+                return false;
+            });
 
-        var colorGrey4 = "#737370";
-        var colorGrey3 = "#9D9E9E";
-        var colorGrey2 = "#C5C6C6";
-        var colorGrey1 = "#EBEDED";
+            var rWords = ["hi", 'hello', 'one', "two", "three", "four", "five", "six", "seven", "eight", "nine",
+            "checkio", "task"];
 
-        var colorWhite = "#FFFFFF";
-        //Your Additional functions or objects inside scope
-        //
-        //
-        //
+            $tryit.find('.bn-random').click(function (e) {
+                e.preventDefault();
+                var numb = Math.floor(Math.random() * 10);
+                var res = [];
+                for (var i = 0; i < numb; i++) {
+                    if (Math.random() < 0.5) {
+                        res.push(String(Math.floor(Math.random() * 1000)));
+                    }
+                    else {
+                        res.push(rWords[Math.floor(Math.random() * rWords.length)]);
+                    }
+                }
+                $tryit.find(".text-input").val(res.join(" "));
+                return false;
+            });
+        });
 
 
     }
