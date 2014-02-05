@@ -77,13 +77,15 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             }
             //Dont change the code before it
 
-            //Your code here about test explanation animation
-            //$content.find(".explanation").html("Something text for example");
-            //
-            //
-            //
-            //
-            //
+            var $expl = $content.find(".explanation");
+            var words = checkioInput.match(/\w+/g);
+            for (var i = 0; i < words.length; i++) {
+                var span = $("<span></span>").text(words[i] + " ");
+                if (words[i].match(/\d+/)) {
+                    span.addClass("number");
+                }
+                $expl.append(span);
+            }
 
 
             this_e.setAnimationHeight($content.height() + 60);
