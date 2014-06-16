@@ -1,0 +1,74 @@
+<img class="for_info_only" title="train" src="{{MEDIA}}train.png" alt="train"
+     style="width: 400px;float: left; margin-top: 0px; "/>
+
+<p>
+    Gyerünk, tanítsuk meg a robotjainkat megkülönböztetni a szavakat a számoktól!
+</p>
+
+<p>
+    Adott egy karakterlánc, amely szóközökkel elválasztott szavakat és számokat 
+    tartalmaz (minden szám és/vagy szó között csak egy szóköz van). A szavak csak 
+    betűkből állnak. Önnek le kell ellenőriznie, hogy van-e az eredeti szövegben három szó 
+    <strong>egymás után</strong>.
+    Például, a "start 5 <strong>one two three</strong> 7 end" karakterlánc tartalmaz 
+    három egymás utáni szót.
+</p>
+
+<p>
+    <strong>Megjegyzés: </strong> a feladatot könnyen meg lehet oldani a következő 
+    függvények használatával:
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.isalpha">str.isalpha</a> és
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>,
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.isalpha">str.isalpha</a> és
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Bemeneti adatok: </strong>egy szavakat tartalmazó karakterlánc (str).
+</p>
+
+<p>
+    <strong>Kimeneti adatok: </strong> a felelet logikai kifejezésként (bool), True vagy False.
+</p>
+
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Példák:</strong>
+    </p>
+    <pre class="brush: python">
+checkio("Hello World hello") == True
+checkio("He is 123 man") == False
+checkio("1 2 3 4") == False
+checkio("bla bla bla bla") == True
+checkio("Hi") == False
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Alkalmazása: </strong>
+    Ez a feladat segít a szöveges típusú adatok feldolgozásában és bemutat néhány 
+    hasznos függvényt is.
+</p>
+
+<p>
+    <strong>Előfeltételek:</strong><br>
+    Az eredeti szöveg csak szavakat és/vagy számokat tartalmaz. Vegyes tartalmú szavak 
+    nincsenek (például betűk és számjegyek keverve egy szóban).<br>
+    0 &lt; len(words) &lt; 100
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Több különböző kategóriánk is van a megoldások publikálására:<br>
+        Clear – ez egy világos, olvasható és dokumentált megoldás. Ez olyan, mint egy ipari kód. <br>
+        Speedy – fókuszban a leggyorsabb megoldás áll. <br>
+        Creative – ez a megoldás leginkább a szórakozást és a kreativitást szolgálja, és ez egy igazi fejtörő is.
+    </p>
+</div>
