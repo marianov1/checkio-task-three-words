@@ -1,0 +1,68 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        First we need to get the words then iterate. You can do this easily with
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>.
+<pre class="brush: python">
+"ab cd 12".split() == ["ab", "cd", "12"]
+for w in words.split():
+    do_something
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I need some help to proceed with the mission
+    </div>
+    <div class="answer">
+        To distinguish betwee words and numbers, use
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.isalpha">str.isalpha</a> and
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+        Because words contain only letter words and numbers one method will be enough to solve this mission.
+<pre class="brush: python">
+if w.isalpha():
+    do_something_word
+else:
+    do_something_number
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am gone half way through. Need help!
+    </div>
+    <div class="answer">
+        You need to count words if they are successive or reset counter if see a number.
+<pre class="brush: python">
+count = 0
+...
+if w.isalpha():
+    count += 1
+else:
+    count = 0
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am stuck. I need a small hint.
+    </div>
+    <div class="answer">
+        If your counter is at 3 already -- don't wait and return True.
+        If the words are complete and the counter was not enough, then return False.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I tried all I could. Nothing works. SOS
+    </div>
+    <div class="answer">
+        Just place "if-else" inside the "for" loop and count.
+    </div>
+</div>
+
+
+</body>
