@@ -1,0 +1,68 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        No tengo idea de como comenzar a resolver esta misión
+    </div>
+    <div class="answer">
+        Primero necesitamos obtener las palabras y luego iterar. Puedes hacerlo fácilmente con
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>.
+<pre class="brush: python">
+"ab cd 12".split() == ["ab", "cd", "12"]
+for w in words.split():
+    do_something
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Necesito alguna ayuda para proceder con la misión
+    </div>
+    <div class="answer">
+        Para distinguir entre palabras y números, usa
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.isalpha">str.isalpha</a> y
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+        Dado que las palabras sólo contienen letras y no números un método será suficiente para resolver esta misión.
+<pre class="brush: python">
+if w.isalpha():
+    do_something_word
+else:
+    do_something_number
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Voy a mitad de camino. Necesito ayuda! 
+    </div>
+    <div class="answer">
+        Necesitas contar palabras si son sucesivas o reiniciar el contador si ves un número.
+<pre class="brush: python">
+count = 0
+...
+if w.isalpha():
+    count += 1
+else:
+    count = 0
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Estoy atascado. Necesito una pequeña pista.
+    </div>
+    <div class="answer">
+        Si tu contador ya está en 3 -- no esperes y retorna True.
+        Si ya revisaste todas las palabras y el contador no es suficiente, entonces retorna False.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Intenté todo lo que pude. Nada funciona. SOS
+    </div>
+    <div class="answer">
+        Sólo pon "if-else" dentro del ciclo "for" y cuenta.
+    </div>
+</div>
+
+
+</body>
