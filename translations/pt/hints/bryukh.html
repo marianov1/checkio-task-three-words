@@ -1,0 +1,68 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        Não tenho ideia de como começar a resolver essa missão
+    </div>
+    <div class="answer">
+		Primeiro precisamos pegar as palavras para percorrer. Você pode fazer isso facilmente com
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>.
+<pre class="brush: python">
+"ab cd 12".split() == ["ab", "cd", "12"]
+for w in words.split():
+    do_something
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Eu preciso de ajuda para continuar com a missão
+    </div>
+    <div class="answer">
+        Para diferenciar palavras e números, use
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.isalpha">str.isalpha</a> e
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit</a>.
+		Já que as palavras contém apenas letras e números, um método será suficiente para resolver a missão.
+<pre class="brush: python">
+if w.isalpha():
+    do_something_word
+else:
+    do_something_number
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Já estou na metade do caminho. Preciso de ajuda!
+    </div>
+    <div class="answer">
+		Você tem que contar as palavras se elas forem sucessivas ou reiniciar a contagem se ver um número.
+<pre class="brush: python">
+count = 0
+...
+if w.isalpha():
+    count += 1
+else:
+    count = 0
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+		Estou enrolado. Preciso de uma dica.
+    </div>
+    <div class="answer">
+		Se o seu contador já está em 3 -- não espere mais e retorne True.
+		Se as palavras estão completas e o contador não atingiu a meta, então retorne False.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+		Eu tentei tudo o que eu pude. Não está funcionando. SOS
+    </div>
+    <div class="answer">
+		Apenas coloque "if-else" dentro do laço "for" e conte.
+    </div>
+</div>
+
+
+</body>
