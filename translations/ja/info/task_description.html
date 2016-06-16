@@ -1,5 +1,4 @@
-﻿<img class="for_info_only" title="train" src="{{MEDIA}}train.png" alt="train"
-     style="width: 400px;float: left; margin-top: -5px; "/>
+﻿<img class="for_info_only" title="train" src="{{MEDIA}}train.png" alt="train" />
 
 <p>
 	ワードと数を識別することをロボットに教えましょう。
@@ -10,19 +9,6 @@
 	ワードは文字だけを含んでいます。
 	あなたは文字列が連続した三つのワードを含んでいるかどうかをチェックしなければいけません。
 	例えば、文字列"start 5 <strong>one two three</strong> 7 end"は連続した三つのワードを含んでいます。
-</p>
-
-<p>
-    <strong>ヒント: </strong> 以下の役に立つ関数を使ってこのタスクを簡単に解くことができます:
-    {% if "python 2" in interpreter|lower %}
-    <a href="http://docs.python.jp/2/library/stdtypes.html#str.split">str.split</a>,
-    <a href="http://docs.python.jp/2/library/stdtypes.html#str.isalpha">str.isalpha</a>,
-    <a href="http://docs.python.jp/2/library/stdtypes.html#str.isdigit">str.isdigit</a>。
-    {% else %}
-    <a href="http://docs.python.jp/3/library/stdtypes.html#str.split">str.split</a>,
-    <a href="http://docs.python.jp/3/library/stdtypes.html#str.isalpha">str.isalpha</a>,
-    <a href="http://docs.python.jp/3/library/stdtypes.html#str.isdigit">str.isdigit</a>。
-    {% endif %}
 </p>
 
 <p>
@@ -59,15 +45,3 @@ checkio("Hi") == False
 	(文字と数字の両方を含む)混在したワードは存在しません。<br>
     0 &lt; len(words) &lt; 100
 </p>
-
-<div class="facts for_info_only">
-    <p>
-		あなたの解答を公表することができる複数のカテゴリーがあります。
-		Clear; この解答は明確(clear)で、読みやすく(readable)、文書化されています(documented)。
-		それはより生産的な(productive)コードです。
-		Speedy; この解答の主な主眼は可能な限り高速な解答を提供することです。
-		Creative; この解答は楽しく(fun)、他のユーザにとってどのように動作するかを理解することは挑戦的(challenge)です
-		(訳注:極短に短いコードや冗談のコードとかです)。
-	
-    </p>
-</div>

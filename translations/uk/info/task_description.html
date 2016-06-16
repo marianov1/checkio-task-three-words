@@ -1,5 +1,4 @@
-<img class="for_info_only" title="train" src="{{MEDIA}}train.png" alt="train"
-     style="width: 400px;float: left; margin-top: 0px; "/>
+<img class="for_info_only" title="train" src="{{MEDIA}}train.png" alt="train" />
 
 <p>
     Давайте навчимо наших роботів відрізняти слова від чисел.
@@ -10,19 +9,6 @@
     та / або числами). Слова складаються тільки з букв. Вам потрібно перевірити 
     чи є у вихідному рядку три слова <strong>підряд</strong>.
     Наприклад, в рядку "start 5 <strong>one two three</strong> 7 end" є три слова підряд.
-</p>
-
-<p>
-    <strong>Зауваження: </strong> Ви легко вирішите це завдання використовуючи дані функції:
-    {% if "python 2" in interpreter|lower %}
-    <a href="http://docs.python.org/2/library/stdtypes.html#str.split">str.split</a>,
-    <a href="http://docs.python.org/2/library/stdtypes.html#str.isalpha">str.isalpha</a> и
-    <a href="http://docs.python.org/2/library/stdtypes.html#str.isdigit">str.isdigit</a>.
-    {% else %}
-    <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>,
-    <a href="http://docs.python.org/3/library/stdtypes.html#str.isalpha">str.isalpha</a> и
-    <a href="http://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit</a>.
-    {% endif %}
 </p>
 
 <p>
@@ -60,11 +46,3 @@ checkio("Hi") == False
     0 &lt; len(words) &lt; 100
 </p>
 
-<div class="facts for_info_only">
-    <p>
-        У нас є декілька різних категорій, в які ви можете опублікувати ваш розв’язок.<br>
-        Clear - це розв’язок ясний, читабельний і документований. Це ж як виробничий код.<br>
-        Speedy - основний фокус тут на найшвидшому розв’язку.<br>
-        Creative - це розв’язок більше для веселощів і випробування уяви, і це - справжня головоломка.
-    </p>
-</div>

@@ -1,5 +1,4 @@
-<img class="for_info_only" title="train" src="{{MEDIA}}train.png" alt="train"
-     style="width: 400px;float: left; margin-top: -5px; "/>
+<img class="for_info_only" title="train" src="{{MEDIA}}train.png" alt="train" />
 
 <p>
     On va apprendre aux Robots &agrave; distinguer les mots et les nombres.
@@ -9,19 +8,6 @@
     On vous donne une chaine de caract&egrave;res avec des mots et des nombres s&eacute;par&eacute;s par des caract&egrave;res blancs (un espace).
     Les mots contiennent uniquement des lettres. Vous devez v&eacute;rifier si la chaine de caract&egrave;res contient trois mots d'affil&eacute;e.
     Par exemple, la chaine de caract&egrave;res "start 5 <strong>one two three</strong> 7 end" contient trois mots d'affil&eacute;e.
-</p>
-
-<p>
-    <strong>Conseils : </strong> Vous pouvez r&eacute;soudre facilement cette t&acirc;che avec quelques fonctions pratiques :
-    {% if "python 2" in interpreter|lower %}
-    <a href="http://docs.python.org/2/library/stdtypes.html#str.split">str.split</a>,
-    <a href="http://docs.python.org/2/library/stdtypes.html#str.isalpha">str.isalpha</a> et
-    <a href="http://docs.python.org/2/library/stdtypes.html#str.isdigit">str.isdigit</a>.
-    {% else %}
-    <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a>,
-    <a href="http://docs.python.org/3/library/stdtypes.html#str.isalpha">str.isalpha</a> et
-    <a href="http://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit</a>.
-    {% endif %}
 </p>
 
 <p>
@@ -58,11 +44,3 @@ checkio("Hi") == False
     0 &lt; len(mots) &lt; 100
 </p>
 
-<div class="facts for_info_only">
-    <p>
-        Nous avons plusieurs cat&eacute;gories diff&eacute;rentes dans lesquelles vous pouvez publier votre solution.
-        Clear : cette solution est claire, lisible et document&eacute;e.
-        Speedy : le principal but de cette solution est d'apporter la solution la plus rapide possible.
-        Creative : cette solution est amusante et poussera les autres utilisateurs &agrave; comprendre comment cela marche.
-    </p>
-</div>
