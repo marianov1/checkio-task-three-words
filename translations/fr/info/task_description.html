@@ -24,13 +24,19 @@
     <p>
         <strong>Exemple :</strong>
     </p>
-    <pre class="brush: python">
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+threeWords("Hello World hello") == True
+threeWords("He is 123 man") == False
+threeWords("1 2 3 4") == False
+threeWords("bla bla bla bla") == True
+threeWords("Hi") == False
+{% else %}
 checkio("Hello World hello") == True
 checkio("He is 123 man") == False
 checkio("1 2 3 4") == False
 checkio("bla bla bla bla") == True
 checkio("Hi") == False
-    </pre>
+{% endif %}</pre>
 </div>
 
 <p class="for_info_only">

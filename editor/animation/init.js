@@ -4,6 +4,10 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var $tryit;
 
         var io = new extIO({
+            functions: {
+                js: 'threeWords',
+                python: 'checkio'
+            },
             animation: function($expl, data){
                 var checkioInput = data.in;
                 if (!checkioInput) {
