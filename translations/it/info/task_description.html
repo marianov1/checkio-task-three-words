@@ -1,0 +1,53 @@
+<img class="for_info_only" title="train" src="{{MEDIA}}train.png" alt="train" />
+
+<p>
+    Insegnamo ai Robot a distinguere parole e numeri.
+</p>
+
+<p>
+    Ti viene data una stringa con parole e numeri separati da spazi (un unico spazio).
+    Le parole contengono solo lettere.
+    Devi controllare se le stringhe contengono tre parole <strong>consecutive</strong>.
+    Ad esempio, la stringa "start 5 <strong>one two three</strong> 7 end" contiene tre parole consecutive.
+</p>
+
+<p>
+    <strong>Input: </strong> Una stringa con delle parole.
+</p>
+
+<p>
+    <strong>Output: </strong> La risposta come booleano.
+</p>
+
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Esempio:</strong>
+    </p>
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+threeWords("Hello World hello") == True
+threeWords("He is 123 man") == False
+threeWords("1 2 3 4") == False
+threeWords("bla bla bla bla") == True
+threeWords("Hi") == False
+{% else %}
+checkio("Hello World hello") == True
+checkio("He is 123 man") == False
+checkio("1 2 3 4") == False
+checkio("bla bla bla bla") == True
+checkio("Hi") == False
+{% endif %}</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Come si usa: </strong>
+    Questo ti insegner&agrave; come lavorare con le stringe ed introdurr&agrave; alcune funzioni utili.
+</p>
+
+<p>
+    <strong>Prerequisiti:</strong>
+    L'input contiene parole e/o numeri.
+    Non ci sono parole miste (che compinino lettere e cifre)<br>
+    0 &lt; len(words) &lt; 100
+</p>
