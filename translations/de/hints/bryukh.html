@@ -1,0 +1,72 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung wo ich mit der Lösung anfangen soll.
+    </div>
+    <div class="answer">
+        Erst einmal musst Du durch die einzelnen Zeichenketten des Strings iterieren können.
+        Das kannst Du ganz einfach mit
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.split">str.split</a> erreichen.
+<pre class="brush: python">
+"ab cd 12".split() == ["ab", "cd", "12"]
+for w in words.split():
+    do_something
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich brauche etwas Hilfe um weiter zu kommen.
+    </div>
+    <div class="answer">
+        Zur Unterscheidung zwischen Worten und Zahlen, kannst Du
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.isalpha">str.isalpha</a> und
+        <a href="http://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit</a> benutzen .
+       Da die einzelnen Zeichenfolgen entweder nur Buchstaben oder nur Ziffern enthalten, sollte eine dieser Funktionen
+       genügen.
+<pre class="brush: python">
+if w.isalpha():
+    do_something_word
+else:
+    do_something_number
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich hab's fast. Bitte hilf mir!
+    </div>
+    <div class="answer">
+        Du musst die Anzahl der aufeinanderfolgenden Worte zählen oder den Zähler zurücksetzen, wenn Du eine Zahl
+        erreichst.
+<pre class="brush: python">
+count = 0
+...
+if w.isalpha():
+    count += 1
+else:
+    count = 0
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich komme nicht weiter. Gib mir einen kleinen Tip.
+    </div>
+    <div class="answer">
+        Wenn der Zähler den Wert 3 erreicht, dann mache nicht weiter, sondern gib <strong>True</strong> zurück.
+        Wenn alle einzelnen Zeichenfolgen geprüft wurden und der Zähler nicht bei 3 angekommen ist, gebe
+        <strong>False</strong> zurück.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich hab getan was ich konnte. Nichts funktioniert. SOS!!!
+    </div>
+    <div class="answer">
+        Benutze mal einen "if-else" Ausdruck in der "for"-Schleife und zähle dann.
+    </div>
+</div>
+
+
+</body>
