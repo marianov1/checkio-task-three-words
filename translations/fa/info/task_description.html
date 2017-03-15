@@ -1,0 +1,74 @@
+<html>
+<img class="for_info_only" title="train" src="{{MEDIA}}train.png" alt="train" />
+
+<p style="direction:rtl">
+بیاید به ربات ها یاد بدهیم که حروف را از اعداد تشخیص بدهند.
+</p>
+
+<p style"direction:rtl">
+    به شما به رشته
+    (string)
+    شامل کلمات و حروف داده شده که به وسیله فاصله
+    -فضای خالی-
+    از یکدیگر جدا شده اند.
+    شما باید چک کنید که
+    <strong> یکی از بخش های </strong>
+    رشته
+    (string)
+    شامل سه کلمه باشد.
+    برای مثال:
+    "start 5 <strong>one two three</strong> 7 end"
+    شامل یه کلمه در یک بخش است.
+</p>
+
+<p style="direction:rtl">
+    <strong>Input (ورودی): </strong>
+    یک رشته
+    (string)
+    شامل چند کلمه
+</p>
+
+<p style="direction:rtl">
+    <strong>Output (خروجی): </strong>
+    جواب در نوع بولین
+    (boolean)
+</p>
+
+
+
+<div class="for_info_only">
+    <p style="direction:rtl">
+        <strong>مثال:</strong>
+    </p>
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+threeWords("Hello World hello") == True
+threeWords("He is 123 man") == False
+threeWords("1 2 3 4") == False
+threeWords("bla bla bla bla") == True
+threeWords("Hi") == False
+{% else %}
+checkio("Hello World hello") == True
+checkio("He is 123 man") == False
+checkio("1 2 3 4") == False
+checkio("bla bla bla bla") == True
+checkio("Hi") == False
+{% endif %}</pre>
+</div>
+
+<p class="for_info_only" style="direction:rtl">
+    <strong>استفاده: </strong>
+    به شما یاد میدهد که چگونه با رشته ها
+    (string)
+    کار کنید و همچنین شما را با چند تایع
+    (function)
+    پر کاربرد آشنا میکند.
+  </p>
+
+<p>
+  <P style="direction:rtl">
+    <strong>فرض ها:</strong><br>
+    ورودی شامل کلمات و/یا اعداد است.
+    هیچ کلمه ای با حروف مخلوط شده نیست.
+  </p>
+    0 &lt; len(words) &lt; 100
+</p>
