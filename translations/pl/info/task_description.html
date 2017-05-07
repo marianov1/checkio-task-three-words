@@ -1,0 +1,53 @@
+<img class="for_info_only" title="train" src="{{MEDIA}}train.png" alt="train" />
+
+<p>
+    Nauczmy Roboty rozróżniać wyrazy i liczby.
+</p>
+
+<p>
+    Na wejściu jest napisz z wyrazami i liczbami oddzielonymi spacjami (po jednej).
+    Wyrazy zawierają tylko litery.
+    Sprawdź czy napis zawiera trzy wyrazy <strong>obok siebie</strong> (nie oddzielone liczbami).
+    Na przykład napis "start 5<strong>jeden dwa trzy</strong> 7 koniec" zawiera trzy wyrazy obok siebie."
+</p>
+
+<p>
+    <strong>Wejście: </strong> Napis z wyrazmi i liczbami.
+</p>
+
+<p>
+    <strong>Wyjście: </strong> Odpowiedź jako wartość logiczna (boolean).
+</p>
+
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Przykłady:</strong>
+    </p>
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+threeWords("Hello World hello") == True
+threeWords("He is 123 man") == False
+threeWords("1 2 3 4") == False
+threeWords("bla bla bla bla") == True
+threeWords("Hi") == False
+{% else %}
+checkio("Hello World hello") == True
+checkio("He is 123 man") == False
+checkio("1 2 3 4") == False
+checkio("bla bla bla bla") == True
+checkio("Hi") == False
+{% endif %}</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Korzyści: </strong>
+    To zadanie uczy Cię jak pracować z napisami i wprowadza użyteczne funkcje.
+</p>
+
+<p>
+    <strong>Założenia:</strong>
+    Wejście zawiery wyrazy i/lub liczby. Nie ma mieszanych wyrazów (litery i liczby w jednym).<br>
+    
+    0 &lt; len(wyrazy) &lt; 100
+</p>
